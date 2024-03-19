@@ -1,37 +1,18 @@
 import streamlit as st
 
-def is_even_or_odd(num):
-    if num % 2 == 0:
-        return "even"
+def is_even_or_odd(number):
+    if number % 2 == 0:
+        return "Even"
     else:
-       import streamlit as st
-
-def is_even_or_odd(num):
-    if num % 2 == 0:
-        return "even"
-    else:
-        return "odd"
+        return "Odd"
 
 def main():
-    st.title("Even-Odd Checker")
-    num = st.number_input("Enter a number:")
+    st.title("Even/Odd Number Checker")
+    number = st.number_input("Enter a number:")
     
     if st.button("Check"):
-        result = is_even_or_odd(num)
-        st.write(f"The number {num} is {result}.")
+        result = is_even_or_odd(number)
+        st.write(f"The number {number} is {result}.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
-   return "odd"
-
-def main():
-    st.title("Even-Odd Checker")
-    num = st.number_input("Enter a number:")
-    
-    if st.button("Check"):
-        result = is_even_or_odd(num)
-        st.write(f"The number {num} is {result}.")
-
-if _name_ == "_main_":
-    main()
-  
